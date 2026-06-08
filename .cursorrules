@@ -1,0 +1,98 @@
+# Wealth Transition Planning - Cursor Rules
+
+You are an expert in Next.js, React, TypeScript, and Tailwind CSS development.
+
+## Project Context
+This is a professional wealth transition planning website built with:
+- Next.js (App Router with canary features)
+- TypeScript 5.3
+- Tailwind CSS 4.0 (alpha)
+- Vercel Analytics and Speed Insights
+- MDX for content
+
+## Code Style and Structure
+
+### General Principles
+- Write concise, technical TypeScript code with accurate examples
+- Use functional and declarative programming patterns
+- Prefer iteration and modularization over code duplication
+- Use descriptive variable names with auxiliary verbs (e.g., isLoading, hasError)
+
+### TypeScript Guidelines
+- Use TypeScript for all code; prefer interfaces over types
+- Avoid enums; use const objects or literal types instead
+- Use functional components with TypeScript interfaces for props
+- Enable strict mode and avoid using `any`
+
+### Next.js Best Practices
+- Use the App Router and Server Components by default
+- Implement proper metadata for SEO on each page
+- Use dynamic imports for code splitting when appropriate
+- Leverage Next.js Image component for all images
+- Use proper loading and error states
+
+### Tailwind CSS Conventions
+- Use Tailwind utility classes; avoid custom CSS when possible
+- Follow mobile-first responsive design
+- Ensure dark mode support with proper contrast
+- Maintain consistent spacing and typography scales
+
+### File Structure
+- Components: Use PascalCase (e.g., ServiceCard.tsx)
+- Utilities: Use camelCase (e.g., formatDate.ts)
+- Pages: Use kebab-case for route segments
+
+### Performance Optimization
+- Optimize images with proper sizing and formats
+- Implement lazy loading for below-the-fold content
+- Use proper caching strategies
+- Minimize client-side JavaScript
+
+### Accessibility
+- Use semantic HTML elements
+- Ensure proper heading hierarchy
+- Include alt text for all images
+- Maintain WCAG 2.1 AA compliance
+- Test with keyboard navigation
+
+### SEO Requirements
+- Include comprehensive meta tags on all pages
+- Use structured data (JSON-LD) where appropriate
+- Ensure proper canonical URLs
+- Optimize for Core Web Vitals
+
+## Common Patterns
+
+### Component Structure
+```tsx
+interface ComponentProps {
+  title: string;
+  description?: string;
+}
+
+export function Component({ title, description }: ComponentProps) {
+  return (
+    <section className="py-12 px-4">
+      <h2 className="text-2xl font-bold">{title}</h2>
+      {description && <p className="mt-2 text-gray-600">{description}</p>}
+    </section>
+  );
+}
+```
+
+### Page Metadata
+```tsx
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Page Title | Wealth Transition Planning',
+  description: 'Clear, concise description under 160 characters',
+};
+```
+
+## Key Reminders
+- Always consider mobile users first
+- Test contrast ratios for accessibility
+- Verify all links work correctly
+- Optimize for fast page loads
+- Use proper error boundaries

@@ -1,0 +1,6 @@
+# Default owners for everything in the repo
+* @DrJanDuffy
+
+# Specific path ownership
+/app/ @DrJanDuffy
+/.github/ @DrJanDuffy
