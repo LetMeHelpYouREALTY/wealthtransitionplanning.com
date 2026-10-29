@@ -8,11 +8,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: `Client Testimonials & Reviews | ${businessConfig.name}`,
-  description: `Read testimonials and reviews from clients who have worked with ${businessConfig.name} for wealth transition planning, empty nester real estate services, and 55+ community planning in Las Vegas, Nevada.`,
+  description: `Read testimonials and reviews from clients who have worked with ${businessConfig.name} for wealth transition planning, downsizer real estate services, and 55+ community planning in Las Vegas, Nevada.`,
   keywords: [
     'wealth transition planning reviews',
     'financial planner reviews Las Vegas',
-    'empty nester real estate testimonials',
+    'downsizer real estate testimonials',
     '55+ community planning reviews',
     'CFP real estate services reviews',
     'Dr. Janet Duffy reviews',
@@ -33,7 +33,7 @@ const testimonials = [
     name: 'Sarah M.',
     role: 'CERTIFIED Financial Planner',
     location: 'Las Vegas, NV',
-    content: 'Working with Dr. Duffy has been transformative for my practice. Her expertise in empty nester transitions has helped me provide comprehensive solutions to my clients. The coordination between financial planning and real estate strategy is seamless.',
+    content: 'Working with Dr. Duffy has been transformative for my practice. Her expertise in downsizer transitions has helped me provide comprehensive solutions to my clients. The coordination between financial planning and real estate strategy is seamless.',
     rating: 5,
   },
   {

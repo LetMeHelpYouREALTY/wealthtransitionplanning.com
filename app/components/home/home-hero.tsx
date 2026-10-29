@@ -15,7 +15,7 @@ export function HomeHero() {
         <p className="text-2xl md:text-3xl text-gray-900 mb-8 max-w-4xl mx-auto leading-relaxed font-semibold">
           <strong className="font-bold">{businessConfig.name}</strong> provides comprehensive real estate services 
           specifically designed to support CERTIFIED Financial Planners (CFPs) and fiduciary 
-          financial advisors in Las Vegas, Nevada. We specialize in empty nester real estate 
+          financial advisors in Las Vegas, Nevada. We specialize in downsizer real estate 
           transitions, 55+ community planning, and wealth transition strategies that complement 
           your financial planning services.
         </p>

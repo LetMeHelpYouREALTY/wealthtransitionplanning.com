@@ -11,7 +11,7 @@ export function MarketExpertiseSection() {
         </h2>
         <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed" style={{ color: '#111827' }}>
           Our team specializes in the Las Vegas real estate market, with deep expertise in 
-          empty nester transitions, 55+ communities, and wealth transition properties. We 
+          downsizer transitions, 55+ communities, and wealth transition properties. We 
           understand the unique characteristics of the Las Vegas market, including neighborhood 
           trends, property values, and market timing factors that impact your clients' financial 
           decisions.
@@ -38,7 +38,7 @@ export function MarketExpertiseSection() {
             <h4 className="text-lg font-semibold mb-3 style={{ color: '#111827' }}">Market Expertise Includes:</h4>
             <ul className="list-disc pl-6 space-y-2 style={{ color: '#111827' }}">
               <li>Las Vegas neighborhood trends and values</li>
-              <li>Empty nester property market analysis</li>
+              <li>Downsizer property market analysis</li>
               <li>55+ community market knowledge</li>
               <li>Wealth transition property strategies</li>
               <li>Market timing for optimal financial outcomes</li>

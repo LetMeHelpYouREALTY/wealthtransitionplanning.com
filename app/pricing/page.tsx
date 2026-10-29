@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     'wealth transition planning pricing',
     'real estate planning fees',
     'financial planner services cost',
-    'empty nester real estate pricing',
+    'downsizer real estate pricing',
     '55+ community planning fees',
   ],
   openGraph: {

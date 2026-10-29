@@ -82,14 +82,14 @@ export default function CFPBenefitsPage() {
               <h3 className="text-2xl font-bold mb-4" style={{ color: '#111827' }}>Expert Real Estate Knowledge</h3>
               <p className="mb-4 leading-relaxed" style={{ color: '#111827' }}>
                 Our team specializes in the Las Vegas real estate market, with deep expertise in 
-                empty nester transitions, 55+ communities, and wealth transition properties. We 
+                downsizer transitions, 55+ communities, and wealth transition properties. We 
                 understand the unique characteristics of the Las Vegas market, including 
                 neighborhood trends, property values, and market timing factors.
               </p>
               <h4 className="text-lg font-semibold mb-3" style={{ color: '#111827' }}>Our Real Estate Expertise Includes:</h4>
               <ul className="list-disc pl-6 space-y-2" style={{ color: '#111827' }}>
                 <li>Las Vegas market analysis and trends</li>
-                <li>Empty nester property transitions</li>
+                <li>Downsizer property transitions</li>
                 <li>55+ community market knowledge</li>
                 <li>Wealth transition property strategies</li>
               </ul>

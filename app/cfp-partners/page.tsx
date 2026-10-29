@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Financial Advisor Partnership Program | Las Vegas Real Estate Planning | CFP Support',
-  description: 'Partner with a Las Vegas real estate expert to support your CERTIFIED Financial Planner practice. Fiduciary financial advisor real estate support for empty nester transitions, 55+ community planning, and wealth transition strategies.',
+  description: 'Partner with a Las Vegas real estate expert to support your CERTIFIED Financial Planner practice. Fiduciary financial advisor real estate support for downsizer transitions, 55+ community planning, and wealth transition strategies.',
   keywords: [
     'financial advisor partnership program Las Vegas',
     'CERTIFIED financial planner Las Vegas partnership',
@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     'best financial advisors in Las Vegas',
     'wealth transition planning for CFPs',
     'CFP referral program',
-    'empty nester real estate for CFPs',
+    'downsizer real estate for CFPs',
     '55+ communities for financial planners',
   ],
   openGraph: {
@@ -37,11 +37,11 @@ export const metadata: Metadata = {
 const faqs = [
   {
     question: 'What is the CFP Partnership Program?',
-    answer: 'The CFP Partnership Program allows CERTIFIED Financial Planners and fiduciary financial advisors in Las Vegas to partner with Dr. Janet Duffy to offer comprehensive real estate services to their clients, including empty nester transitions, 55+ community planning, and wealth transition real estate strategies. This partnership expands your service offerings without requiring additional real estate certifications or expertise.',
+    answer: 'The CFP Partnership Program allows CERTIFIED Financial Planners and fiduciary financial advisors in Las Vegas to partner with Dr. Janet Duffy to offer comprehensive real estate services to their clients, including downsizer transitions, 55+ community planning, and wealth transition real estate strategies. This partnership expands your service offerings without requiring additional real estate certifications or expertise.',
   },
   {
     question: 'What real estate services are available through the partnership?',
-    answer: 'CFP partners gain access to specialized real estate services including empty nester real estate transitions in Las Vegas, 55+ community planning and recommendations, wealth transition real estate strategies, property market analysis, and transaction coordination that aligns with financial planning goals. All services are provided by a fiduciary-minded real estate advisor.',
+    answer: 'CFP partners gain access to specialized real estate services including downsizer real estate transitions in Las Vegas, 55+ community planning and recommendations, wealth transition real estate strategies, property market analysis, and transaction coordination that aligns with financial planning goals. All services are provided by a fiduciary-minded real estate advisor.',
   },
   {
     question: 'How does the partnership benefit my financial planning practice?',
@@ -53,7 +53,7 @@ const faqs = [
   },
   {
     question: 'What resources are available to CFP partners?',
-    answer: 'CFP partners receive access to specialized real estate resources including client education materials on empty nester transitions and 55+ communities, real estate market analysis tools, partnership marketing materials, case study examples, and direct consultation support for complex real estate scenarios. All resources are designed to support your CERTIFIED Financial Planner practice.',
+    answer: 'CFP partners receive access to specialized real estate resources including client education materials on downsizer transitions and 55+ communities, real estate market analysis tools, partnership marketing materials, case study examples, and direct consultation support for complex real estate scenarios. All resources are designed to support your CERTIFIED Financial Planner practice.',
   },
   {
     question: 'Is this partnership suitable for fiduciary financial advisors?',
@@ -85,7 +85,7 @@ export default function CFPPartnersPage() {
           <p className="mb-4 text-lg text-gray-900">
             As a Certified Financial Planner, you understand that real estate decisions are 
             integral to your clients' overall financial picture. Whether your clients are 
-            empty nesters looking to downsize, retirees considering 55+ communities, or 
+            downsizers looking to downsize, retirees considering 55+ communities, or 
             families planning wealth transitions, real estate plays a crucial role in their 
             financial success. However, becoming a real estate expert yourself isn't necessary—or 
             practical—when you can partner with someone who specializes in real estate services 
@@ -95,7 +95,7 @@ export default function CFPPartnersPage() {
             The CFP Partnership Program allows you to offer your clients comprehensive real estate 
             services without investing in additional certifications or building internal real estate 
             expertise. Partner with Dr. Janet Duffy to provide your clients with expert real estate 
-            guidance on empty nester transitions, 55+ community planning, and wealth transition 
+            guidance on downsizer transitions, 55+ community planning, and wealth transition 
             strategies—all while maintaining your role as their primary financial advisor.
           </p>
           <p className="mb-4 text-lg text-gray-900">
@@ -148,7 +148,7 @@ export default function CFPPartnersPage() {
               <h3 className="text-2xl font-semibold mb-4">Expert Real Estate Knowledge</h3>
               <p className="mb-4 text-gray-900">
                 Our team specializes in the Las Vegas real estate market, with deep expertise in 
-                empty nester transitions, 55+ communities, and wealth transition properties. We 
+                downsizer transitions, 55+ communities, and wealth transition properties. We 
                 understand the unique characteristics of the Las Vegas market, including 
                 neighborhood trends, property values, and market timing factors that impact your 
                 clients' financial decisions.
@@ -161,7 +161,7 @@ export default function CFPPartnersPage() {
               <h4 className="text-lg font-semibold mb-2">Our Real Estate Expertise Includes:</h4>
               <ul className="list-disc pl-6 space-y-2">
                 <li>Las Vegas market analysis and trends</li>
-                <li>Empty nester property transitions</li>
+                <li>Downsizer property transitions</li>
                 <li>55+ community market knowledge</li>
                 <li>Wealth transition property strategies</li>
               </ul>
@@ -246,16 +246,16 @@ export default function CFPPartnersPage() {
           
           <div className="space-y-8">
             <div className="p-8 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4" style={{ color: '#111827' }}>Empty Nester Real Estate Services</h3>
+              <h3 className="text-2xl font-semibold mb-4" style={{ color: '#111827' }}>Downsizer Real Estate Services</h3>
               <p className="mb-4 text-lg" style={{ color: '#1f2937' }}>
-                Empty nesters face unique real estate challenges that require specialized expertise. 
+                Downsizers face unique real estate challenges that require specialized expertise. 
                 When your clients' children have moved out, they often need to transition from 
                 large family homes to properties that better suit their current lifestyle and 
                 financial situation. This transition involves complex considerations that impact 
                 their financial plans, tax situations, and retirement strategies.
               </p>
               <p className="mb-4" style={{ color: '#1f2937' }}>
-                Our empty nester real estate services help your clients navigate this transition 
+                Our downsizer real estate services help your clients navigate this transition 
                 successfully. We provide comprehensive market analysis to determine optimal timing 
                 for selling their current property, identify suitable downsizing options that align 
                 with their lifestyle goals, and coordinate the transaction to minimize tax 
@@ -267,7 +267,7 @@ export default function CFPPartnersPage() {
                 estate recommendation supports their broader financial strategy and helps them 
                 achieve their long-term goals.
               </p>
-              <h4 className="text-xl font-semibold mb-3 style={{ color: '#111827' }}">Empty Nester Services Include:</h4>
+              <h4 className="text-xl font-semibold mb-3 style={{ color: '#111827' }}">Downsizer Services Include:</h4>
               <ul className="list-disc pl-6 space-y-2 style={{ color: '#1f2937' }}">
                 <li><strong>Market Timing Analysis:</strong> We analyze current Las Vegas market 
                 conditions to help your clients sell at optimal times, maximizing their proceeds 
@@ -399,7 +399,7 @@ export default function CFPPartnersPage() {
           </p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 border border-neutral-200 dark:border-neutral-800 rounded-lg">
-              <h3 className="text-lg font-semibold mb-2">Case Study: Empty Nester Transition</h3>
+              <h3 className="text-lg font-semibold mb-2">Case Study: Downsizer Transition</h3>
               <p className="text-sm style={{ color: '#111827' }} mb-4">
                 How a CFP partnership helped clients navigate downsizing and wealth transition 
                 with expert real estate guidance that aligned with their financial plans.
@@ -408,7 +408,7 @@ export default function CFPPartnersPage() {
                 href="/services/empty-nester"
                 className="text-blue-600 dark:text-blue-400 hover:underline text-sm"
               >
-                Learn More About Empty Nester Services →
+                Learn More About Downsizer Services →
               </Link>
             </div>
             <div className="p-6 border border-neutral-200 dark:border-neutral-800 rounded-lg">
@@ -455,7 +455,7 @@ export default function CFPPartnersPage() {
             <div className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
               <h3 className="text-xl font-semibold mb-3">Client Education Materials</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Empty nester real estate transition guides</li>
+                <li>Downsizer real estate transition guides</li>
                 <li>55+ community planning resources</li>
                 <li>Wealth transition real estate materials</li>
                 <li>Market analysis and trend reports</li>
@@ -475,7 +475,7 @@ export default function CFPPartnersPage() {
             <div className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
               <h3 className="text-xl font-semibold mb-3">Case Study Examples</h3>
               <ul className="list-disc pl-6 space-y-2">
-                <li>Empty nester transition case studies</li>
+                <li>Downsizer transition case studies</li>
                 <li>55+ community planning examples</li>
                 <li>Wealth transition success stories</li>
                 <li>Partnership collaboration examples</li>

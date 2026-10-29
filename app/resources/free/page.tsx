@@ -6,11 +6,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: `Free Real Estate Resources for Financial Planners | ${businessConfig.name}`,
-  description: 'Free educational resources for financial planners: blog articles, calculators, guides, and tools for empty nester transitions, 55+ communities, and wealth transition planning.',
+  description: 'Free educational resources for financial planners: blog articles, calculators, guides, and tools for downsizer transitions, 55+ communities, and wealth transition planning.',
   keywords: [
     'free real estate resources',
     'financial planner resources',
-    'empty nester guides',
+    'downsizer guides',
     '55+ community resources',
     'real estate calculators',
     'CFP resources',
@@ -46,7 +46,7 @@ export default function FreeResourcesPage() {
           </h1>
           <p className="text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: '#111827' }}>
             Access our free educational content to help you and your clients understand real estate 
-            decision-making, empty nester transitions, 55+ community planning, and how real estate 
+            decision-making, downsizer transitions, 55+ community planning, and how real estate 
             decisions impact financial planning strategies.
           </p>
         </div>
@@ -57,7 +57,7 @@ export default function FreeResourcesPage() {
             <h2 className="text-3xl font-bold mb-4" style={{ color: '#111827' }}>Latest Real Estate Articles for Financial Planners</h2>
             <p className="mb-6 text-lg leading-relaxed" style={{ color: '#111827' }}>
               Stay informed with our latest blog posts on real estate topics relevant to financial 
-              planners, including empty nester transitions, 55+ community planning, wealth transition 
+              planners, including downsizer transitions, 55+ community planning, wealth transition 
               strategies, and Las Vegas market insights. These articles provide expert analysis, 
               market trends, and practical guidance that supports your financial planning practice.
             </p>
@@ -86,7 +86,7 @@ export default function FreeResourcesPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 bg-white rounded-lg border border-gray-200">
-              <h3 className="text-xl font-semibold mb-3" style={{ color: '#111827' }}>Empty Nester Real Estate Transition Calculator</h3>
+              <h3 className="text-xl font-semibold mb-3" style={{ color: '#111827' }}>Downsizer Real Estate Transition Calculator</h3>
               <p className="mb-4" style={{ color: '#111827' }}>
                 Analyze the financial implications of downsizing, including sale proceeds, purchase 
                 costs, and impact on retirement planning.

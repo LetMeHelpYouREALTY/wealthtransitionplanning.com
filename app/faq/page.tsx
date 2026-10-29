@@ -9,10 +9,10 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: `Frequently Asked Questions | ${businessConfig.name}`,
-  description: `Frequently asked questions about ${businessConfig.name}'s wealth transition planning, empty nester real estate services, 55+ community planning, and CFP partnership program in Las Vegas, Nevada.`,
+  description: `Frequently asked questions about ${businessConfig.name}'s wealth transition planning, downsizer real estate services, 55+ community planning, and CFP partnership program in Las Vegas, Nevada.`,
   keywords: [
     'wealth transition planning FAQ',
-    'empty nester real estate questions',
+    'downsizer real estate questions',
     '55+ community planning FAQ',
     'financial planner FAQ Las Vegas',
     'CFP partnership questions',
@@ -44,19 +44,19 @@ const targetFAQQuestions = [
   },
   {
     question: 'What should I look for in a financial planner Las Vegas?',
-    answer: 'When looking for a financial planner in Las Vegas, seek a CERTIFIED Financial Planner (CFP®) who is a fiduciary, has expertise in real estate planning, understands the Las Vegas market, and can coordinate real estate decisions with your financial plans. Look for advisors who specialize in empty nester transitions, 55+ community planning, and wealth transition strategies.',
+    answer: 'When looking for a financial planner in Las Vegas, seek a CERTIFIED Financial Planner (CFP®) who is a fiduciary, has expertise in real estate planning, understands the Las Vegas market, and can coordinate real estate decisions with your financial plans. Look for advisors who specialize in downsizer transitions, 55+ community planning, and wealth transition strategies.',
   },
   {
     question: 'Do financial advisors in Las Vegas help with real estate planning?',
     answer: 'Yes, many financial advisors in Las Vegas, especially those specializing in wealth transition planning, help with real estate planning. They coordinate property decisions with financial plans, analyze tax implications, assess market timing, and ensure real estate choices support retirement planning, estate planning, and wealth transfer goals.',
   },
   {
-    question: 'How can a financial planner help with empty nester real estate transitions?',
-    answer: 'A CERTIFIED Financial Planner can help with empty nester real estate transitions by analyzing the financial implications of downsizing, coordinating property sales with tax strategies, assessing timing for optimal financial outcomes, and ensuring that downsizing decisions support retirement planning and estate planning goals.',
+    question: 'How can a financial planner help with downsizer real estate transitions?',
+    answer: 'A CERTIFIED Financial Planner can help with downsizer real estate transitions by analyzing the financial implications of downsizing, coordinating property sales with tax strategies, assessing timing for optimal financial outcomes, and ensuring that downsizing decisions support retirement planning and estate planning goals.',
   },
   {
-    question: 'What are the tax implications of selling my home as an empty nester?',
-    answer: 'Tax implications of selling your home as an empty nester depend on factors including capital gains exclusions, length of ownership, and how proceeds are used. A fiduciary financial advisor in Las Vegas can help you understand these implications and structure the transaction to minimize taxes while supporting your financial planning goals.',
+    question: 'What are the tax implications of selling my home as a downsizer?',
+    answer: 'Tax implications of selling your home as a downsizer depend on factors including capital gains exclusions, length of ownership, and how proceeds are used. A fiduciary financial advisor in Las Vegas can help you understand these implications and structure the transaction to minimize taxes while supporting your financial planning goals.',
   },
   {
     question: 'Should I consult a financial planner before moving to a 55+ community?',
@@ -71,7 +71,7 @@ const targetFAQQuestions = [
 const additionalFAQs = [
   {
     question: 'What makes your services different from a traditional real estate agent?',
-    answer: 'We specialize in coordinating real estate transitions with financial planning goals. Unlike traditional agents, we work directly with CERTIFIED Financial Planners to ensure real estate decisions align with your overall wealth strategy. Our fiduciary approach means we always act in your best interest, and we understand the complexities of empty nester transitions, 55+ communities, and wealth transfer planning.',
+    answer: 'We specialize in coordinating real estate transitions with financial planning goals. Unlike traditional agents, we work directly with CERTIFIED Financial Planners to ensure real estate decisions align with your overall wealth strategy. Our fiduciary approach means we always act in your best interest, and we understand the complexities of downsizer transitions, 55+ communities, and wealth transfer planning.',
   },
   {
     question: 'How long does the typical wealth transition process take?',
@@ -91,7 +91,7 @@ const additionalFAQs = [
   },
   {
     question: 'What types of properties do you specialize in?',
-    answer: 'We specialize in residential real estate transitions, particularly single-family homes, condominiums, and 55+ community properties. Our expertise includes helping empty nesters downsize, finding appropriate 55+ communities, and managing property transitions as part of wealth transfer strategies.',
+    answer: 'We specialize in residential real estate transitions, particularly single-family homes, condominiums, and 55+ community properties. Our expertise includes helping downsizers downsize, finding appropriate 55+ communities, and managing property transitions as part of wealth transfer strategies.',
   },
 ]
 

@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     'financial advisor Las Vegas free consultation',
     'real estate services for financial planners',
     'CFP real estate support Las Vegas',
-    'empty nester real estate Las Vegas',
+    'downsizer real estate Las Vegas',
     '55+ communities Las Vegas',
     'wealth transition planning',
     'Las vegas home financial planner reviews',

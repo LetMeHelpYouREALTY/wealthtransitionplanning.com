@@ -7,8 +7,8 @@ import Link from 'next/link'
 export function ServiceCardsSection() {
   const services = [
     {
-      title: 'Empty Nester Real Estate Services',
-      description: 'Help your clients navigate the transition from family homes to more suitable properties. We specialize in empty nester real estate in Las Vegas, understanding the financial implications, tax considerations, and lifestyle factors that impact your clients\' decisions.',
+      title: 'Downsizer Real Estate Services',
+      description: 'Help your clients navigate the transition from family homes to more suitable properties. We specialize in downsizer real estate in Las Vegas, understanding the financial implications, tax considerations, and lifestyle factors that impact your clients\' decisions.',
       features: [
         'Market timing analysis for optimal sale prices',
         'Downsizing property recommendations',
@@ -54,7 +54,7 @@ export function ServiceCardsSection() {
           <p className="text-lg md:text-xl text-gray-900 mb-6 leading-relaxed">
             As a Certified Financial Planner, you understand that real estate decisions are 
             integral to your clients' overall financial picture. Whether your clients are 
-            empty nesters looking to downsize, retirees considering 55+ communities, or 
+            downsizers looking to downsize, retirees considering 55+ communities, or 
             families planning wealth transitions, real estate plays a crucial role in their 
             financial success. That's where we come in.
           </p>

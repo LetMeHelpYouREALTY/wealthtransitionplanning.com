@@ -7,10 +7,10 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: `Las Vegas Real Estate Market Expertise | ${businessConfig.name}`,
-  description: 'Expert knowledge of the Las Vegas real estate market: empty nester transitions, 55+ communities, wealth transition properties. Comprehensive market analysis and service area coverage.',
+  description: 'Expert knowledge of the Las Vegas real estate market: downsizer transitions, 55+ communities, wealth transition properties. Comprehensive market analysis and service area coverage.',
   keywords: [
     'Las Vegas real estate market',
-    'empty nester real estate Las Vegas',
+    'downsizer real estate Las Vegas',
     '55+ communities Las Vegas',
     'Las Vegas neighborhood trends',
     'Henderson real estate',
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   ],
   openGraph: {
     title: `Las Vegas Real Estate Market Expertise | ${businessConfig.name}`,
-    description: 'Expert knowledge of the Las Vegas real estate market for empty nester transitions, 55+ communities, and wealth transition properties.',
+    description: 'Expert knowledge of the Las Vegas real estate market for downsizer transitions, 55+ communities, and wealth transition properties.',
     url: `${baseUrl}/services/market-expertise`,
     siteName: businessConfig.name,
     locale: 'en_US',

@@ -58,7 +58,7 @@ export function LocalBusinessSchema() {
     knowsAbout: [
       'CERTIFIED Financial Planner Support',
       'Fiduciary Financial Advisor Services',
-      'Empty Nester Real Estate Transitions',
+      'Downsizer Real Estate Transitions',
       '55+ Community Planning',
       'Wealth Transition Real Estate',
       'Las Vegas Real Estate Market',

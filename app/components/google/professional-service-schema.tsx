@@ -32,13 +32,13 @@ export function ProfessionalServiceSchema() {
     },
     serviceType: [
       'Real Estate Services for Financial Planners',
-      'Empty Nester Real Estate Transitions',
+      'Downsizer Real Estate Transitions',
       '55+ Community Planning',
       'Wealth Transition Real Estate Planning',
       'CERTIFIED Financial Planner Support',
       'Fiduciary Real Estate Services',
     ],
-    description: 'Professional real estate services specifically designed to support CERTIFIED Financial Planners and fiduciary advisors in Las Vegas, Nevada. Services include empty nester transitions, 55+ community planning, and wealth transition real estate strategies.',
+    description: 'Professional real estate services specifically designed to support CERTIFIED Financial Planners and fiduciary advisors in Las Vegas, Nevada. Services include downsizer transitions, 55+ community planning, and wealth transition real estate strategies.',
     url: baseUrl,
     aggregateRating: {
       '@type': 'AggregateRating',

@@ -6,10 +6,10 @@ import { BlogPosts } from 'app/components/posts'
 
 export const metadata: Metadata = {
   title: `Real Estate Resources for Financial Planners | Resources & Guides | ${businessConfig.name}`,
-  description: 'Free and premium real estate resources for financial planners: empty nester guides, 55+ community planning resources, wealth transition checklists, and educational materials for CFPs and their clients in Las Vegas, Nevada.',
+  description: 'Free and premium real estate resources for financial planners: downsizer guides, 55+ community planning resources, wealth transition checklists, and educational materials for CFPs and their clients in Las Vegas, Nevada.',
   keywords: [
     'real estate resources for financial planners',
-    'empty nester real estate guides',
+    'downsizer real estate guides',
     '55+ communities Las Vegas resources',
     'wealth transition planning resources',
     'estate planning guides Las Vegas',
@@ -44,7 +44,7 @@ export default function ResourcesPage() {
       
       <p className="text-xl text-gray-900 mb-8">
         Educational resources to support financial planners and their clients in real estate 
-        decision-making, empty nester transitions, 55+ community planning, and wealth transition 
+        decision-making, downsizer transitions, 55+ community planning, and wealth transition 
         strategies in Las Vegas, Nevada.
       </p>
 
@@ -66,7 +66,7 @@ export default function ResourcesPage() {
         </p>
         <p className="mb-4 text-lg text-gray-900">
           From free educational content to premium guides and checklists, our resources cover 
-          empty nester real estate transitions, 55+ community planning, wealth transition 
+          downsizer real estate transitions, 55+ community planning, wealth transition 
           strategies, and Las Vegas market insights that support your financial planning 
           recommendations and client outcomes.
         </p>
@@ -78,7 +78,7 @@ export default function ResourcesPage() {
           <h2 className="text-3xl font-semibold mb-6 text-gray-900">Free Resources for Financial Planners and Clients</h2>
           <p className="mb-6 text-lg text-gray-900 max-w-3xl mx-auto leading-relaxed">
             Access our free educational content including blog articles, calculators, and guides 
-            to help you and your clients understand real estate decision-making, empty nester 
+            to help you and your clients understand real estate decision-making, downsizer 
             transitions, 55+ community planning, and how real estate decisions impact financial 
             planning strategies.
           </p>
@@ -98,7 +98,7 @@ export default function ResourcesPage() {
           <p className="mb-6 text-lg text-gray-900 max-w-3xl mx-auto leading-relaxed">
             Download comprehensive guides, checklists, and templates to support your real estate 
             services and enhance your financial planning practice. These premium resources require 
-            email registration to access and provide in-depth guidance on empty nester transitions, 
+            email registration to access and provide in-depth guidance on downsizer transitions, 
             55+ community planning, and wealth transition strategies.
           </p>
           <Link
