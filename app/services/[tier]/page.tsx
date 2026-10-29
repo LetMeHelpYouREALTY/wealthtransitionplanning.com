@@ -13,13 +13,14 @@ export async function generateStaticParams() {
   }))
 }
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { tier: string }
-}): Promise<Metadata> {
+export async function generateMetadata(
+  props: {
+    params: Promise<{ tier: string }>
+  }
+): Promise<Metadata> {
+  const params = await props.params;
   const tier = getServiceTier(params.tier)
-  
+
   if (!tier) {
     return {
       title: 'Service Not Found',
@@ -40,7 +41,8 @@ export async function generateMetadata({
   }
 }
 
-export default function ServiceTierPage({ params }: { params: { tier: string } }) {
+export default async function ServiceTierPage(props: { params: Promise<{ tier: string }> }) {
+  const params = await props.params;
   const tier = getServiceTier(params.tier)
 
   if (!tier) {
