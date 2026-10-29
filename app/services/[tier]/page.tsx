@@ -94,7 +94,7 @@ export default function ServiceTierPage({ params }: { params: { tier: string } }
             achieve optimal outcomes.
           </p>
           <p className="mb-4 text-lg text-gray-900 dark:text-gray-100">
-            Our real estate services include empty nester transitions, 55+ community planning, 
+            Our real estate services include downsizer transitions, 55+ community planning, 
             wealth transition strategies, and comprehensive property analysis—all coordinated with 
             financial planning goals to ensure that real estate decisions support rather than 
             complicate financial success.
@@ -134,9 +134,9 @@ export default function ServiceTierPage({ params }: { params: { tier: string } }
           
           <div className="space-y-8">
             <div className="p-6 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Empty Nester Real Estate Services</h3>
+              <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-gray-100">Downsizer Real Estate Services</h3>
               <p className="mb-4 text-gray-800 dark:text-gray-200">
-                Comprehensive support for empty nester real estate transitions in Las Vegas, 
+                Comprehensive support for downsizer real estate transitions in Las Vegas, 
                 including market analysis, property recommendations, downsizing strategies, and 
                 coordination with financial planning goals. We help your clients navigate the 
                 transition from family homes to properties that better suit their current lifestyle 

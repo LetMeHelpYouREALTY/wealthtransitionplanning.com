@@ -7,10 +7,10 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: `Our Process | How We Work | ${businessConfig.name}`,
-  description: `Learn about ${businessConfig.name}'s comprehensive process for wealth transition planning, empty nester real estate services, and 55+ community planning in Las Vegas, Nevada.`,
+  description: `Learn about ${businessConfig.name}'s comprehensive process for wealth transition planning, downsizer real estate services, and 55+ community planning in Las Vegas, Nevada.`,
   keywords: [
     'wealth transition planning process',
-    'empty nester real estate process',
+    'downsizer real estate process',
     '55+ community planning process',
     'financial planning process Las Vegas',
     'real estate planning workflow',
@@ -52,7 +52,7 @@ const processSteps = [
   {
     step: 3,
     title: 'Strategy Development',
-    description: 'We create a detailed strategy that addresses your specific needs, whether you\'re an empty nester looking to downsize, planning for a 55+ community, or managing a wealth transition.',
+    description: 'We create a detailed strategy that addresses your specific needs, whether you\'re a downsizer looking to downsize, planning for a 55+ community, or managing a wealth transition.',
     details: [
       'Property evaluation and recommendations',
       'Timeline development',
@@ -161,7 +161,7 @@ export default function ProcessPage() {
           Explore Our Services
         </h2>
         <p className="text-gray-900 mb-6">
-          Learn more about our specific services for empty nesters, 55+ communities, and wealth transition planning.
+          Learn more about our specific services for downsizers, 55+ communities, and wealth transition planning.
         </p>
         <Link
           href="/services"

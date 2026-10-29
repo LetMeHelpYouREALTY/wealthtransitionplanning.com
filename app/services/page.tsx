@@ -17,10 +17,10 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: `Real Estate Services for Financial Planners | Our Solutions | ${businessConfig.name}`,
-  description: 'Comprehensive real estate services for financial planners: empty nester transitions, 55+ community planning, and wealth transition real estate strategies. Fee-only fiduciary services that complement financial planning in Las Vegas, Nevada.',
+  description: 'Comprehensive real estate services for financial planners: downsizer transitions, 55+ community planning, and wealth transition real estate strategies. Fee-only fiduciary services that complement financial planning in Las Vegas, Nevada.',
   keywords: [
     'real estate services for financial planners',
-    'empty nester real estate Las Vegas',
+    'downsizer real estate Las Vegas',
     '55+ communities Las Vegas',
     'wealth transition planning services',
     'fee-only financial planner',
@@ -111,7 +111,7 @@ export default function ServicesPage() {
             </h2>
             <p className="text-lg md:text-xl max-w-4xl mx-auto leading-relaxed mb-8" style={{ color: '#111827' }}>
               Our team specializes in the Las Vegas real estate market, with deep expertise in 
-              empty nester transitions, 55+ communities, and wealth transition properties. We 
+              downsizer transitions, 55+ communities, and wealth transition properties. We 
               understand the unique characteristics of the Las Vegas market, including neighborhood 
               trends, property values, and market timing factors.
             </p>

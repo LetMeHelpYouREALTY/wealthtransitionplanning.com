@@ -15,7 +15,7 @@ export function ContactInfoSection() {
           Our office is conveniently located in Las Vegas, Nevada, serving financial planners 
           and their clients throughout the Las Vegas metropolitan area. We're available to 
           discuss your real estate service needs, explore partnership opportunities, or provide 
-          expert guidance on empty nester transitions, 55+ community planning, and wealth 
+          expert guidance on downsizer transitions, 55+ community planning, and wealth 
           transition strategies.
         </p>
       </div>
@@ -50,7 +50,7 @@ export function ContactInfoSection() {
           </address>
           <p className="text-sm text-gray-900 leading-relaxed">
             We're available to answer your questions about real estate services for financial 
-            planners, CFP partnership opportunities, empty nester transitions, 55+ community 
+            planners, CFP partnership opportunities, downsizer transitions, 55+ community 
             planning, and wealth transition strategies. Contact us today to learn how we can 
             support your practice or assist with your real estate needs.
           </p>

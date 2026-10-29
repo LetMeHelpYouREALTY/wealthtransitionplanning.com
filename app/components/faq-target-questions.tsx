@@ -20,7 +20,7 @@ export const targetFAQQuestions = {
     },
     {
       question: 'What should I look for in a financial planner Las Vegas?',
-      answer: 'When looking for a financial planner in Las Vegas, seek a CERTIFIED Financial Planner (CFP®) who is a fiduciary, has expertise in real estate planning, understands the Las Vegas market, and can coordinate real estate decisions with your financial plans. Look for advisors who specialize in empty nester transitions, 55+ community planning, and wealth transition strategies.',
+      answer: 'When looking for a financial planner in Las Vegas, seek a CERTIFIED Financial Planner (CFP®) who is a fiduciary, has expertise in real estate planning, understands the Las Vegas market, and can coordinate real estate decisions with your financial plans. Look for advisors who specialize in downsizer transitions, 55+ community planning, and wealth transition strategies.',
     },
     {
       question: 'Do financial advisors in Las Vegas help with real estate planning?',
@@ -29,12 +29,12 @@ export const targetFAQQuestions = {
   ],
   emptyNester: [
     {
-      question: 'How can a financial planner help with empty nester real estate transitions?',
-      answer: 'A CERTIFIED Financial Planner can help with empty nester real estate transitions by analyzing the financial implications of downsizing, coordinating property sales with tax strategies, assessing timing for optimal financial outcomes, and ensuring that downsizing decisions support retirement planning and estate planning goals.',
+      question: 'How can a financial planner help with downsizer real estate transitions?',
+      answer: 'A CERTIFIED Financial Planner can help with downsizer real estate transitions by analyzing the financial implications of downsizing, coordinating property sales with tax strategies, assessing timing for optimal financial outcomes, and ensuring that downsizing decisions support retirement planning and estate planning goals.',
     },
     {
-      question: 'What are the tax implications of selling my home as an empty nester?',
-      answer: 'Tax implications of selling your home as an empty nester depend on factors including capital gains exclusions, length of ownership, and how proceeds are used. A fiduciary financial advisor in Las Vegas can help you understand these implications and structure the transaction to minimize taxes while supporting your financial planning goals.',
+      question: 'What are the tax implications of selling my home as a downsizer?',
+      answer: 'Tax implications of selling your home as a downsizer depend on factors including capital gains exclusions, length of ownership, and how proceeds are used. A fiduciary financial advisor in Las Vegas can help you understand these implications and structure the transaction to minimize taxes while supporting your financial planning goals.',
     },
   ],
   communities: [

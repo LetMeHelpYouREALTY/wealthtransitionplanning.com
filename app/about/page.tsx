@@ -11,7 +11,7 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'About Dr. Janet Duffy | Best Financial Advisors in Las Vegas | Fiduciary Real Estate Expert',
-  description: 'Learn about Dr. Janet Duffy, one of the best financial advisors in Las Vegas specializing in fiduciary real estate services for CERTIFIED Financial Planners. Trust-based approach to empty nester transitions and 55+ community planning.',
+  description: 'Learn about Dr. Janet Duffy, one of the best financial advisors in Las Vegas specializing in fiduciary real estate services for CERTIFIED Financial Planners. Trust-based approach to downsizer transitions and 55+ community planning.',
   keywords: [
     'best financial advisors in Las Vegas',
     'fiduciary financial advisor Las Vegas',
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     'wealth transition planning expert',
     'estate planning advisor Nevada',
     'fiduciary real estate expert',
-    'empty nester real estate expert',
+    'downsizer real estate expert',
     'Las vegas home financial planner reviews',
   ],
   openGraph: {
@@ -87,7 +87,7 @@ export default function AboutPage() {
         {/* Additional Bio Content */}
         <section className="mb-12">
           <p className="mb-4 text-lg text-gray-900">
-            Dr. Duffy is particularly skilled in working with empty nesters, retirees, and 
+            Dr. Duffy is particularly skilled in working with downsizers, retirees, and 
             individuals planning transitions to 55+ communities, helping them make informed 
             real estate decisions that support their financial goals, estate plans, and 
             retirement strategies. She understands that real estate is often the largest asset 
@@ -169,16 +169,16 @@ export default function AboutPage() {
             real estate services that complement their financial planning practice.
           </p>
           
-          <h3 className="text-2xl font-semibold mb-4 mt-8 text-gray-900">Empty Nester Real Estate Services</h3>
+          <h3 className="text-2xl font-semibold mb-4 mt-8 text-gray-900">Downsizer Real Estate Services</h3>
           <p className="mb-4 text-gray-900">
-            Dr. Duffy specializes in helping empty nesters navigate real estate transitions 
+            Dr. Duffy specializes in helping downsizers navigate real estate transitions 
             that support their financial goals. She understands that downsizing decisions 
             impact retirement planning, tax strategies, and estate planning objectives. Her 
             services include market analysis, property recommendations, and transaction 
             coordination that align with financial planning strategies.
           </p>
           <p className="mb-4 text-gray-900">
-            She works closely with financial planners to ensure that empty nester real estate 
+            She works closely with financial planners to ensure that downsizer real estate 
             transitions are timed optimally, structured tax-efficiently, and support clients' 
             long-term financial objectives. This coordination ensures that property decisions 
             enhance rather than complicate financial planning outcomes.
@@ -286,7 +286,7 @@ export default function AboutPage() {
             <ul className="list-disc pl-6 space-y-3">
               <li className="text-gray-900"><strong>Certified Financial Planners</strong> looking to offer comprehensive 
               real estate services to their clients</li>
-              <li className="text-gray-900"><strong>CFP clients</strong> who are empty nesters planning real estate transitions</li>
+              <li className="text-gray-900"><strong>CFP clients</strong> who are downsizers planning real estate transitions</li>
               <li className="text-gray-900"><strong>Retirees</strong> considering 55+ communities in Las Vegas</li>
             </ul>
             <ul className="list-disc pl-6 space-y-3">

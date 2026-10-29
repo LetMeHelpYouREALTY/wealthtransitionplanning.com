@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: [
     'real estate services Las Vegas contact',
     'CFP real estate support contact',
-    'empty nester real estate contact',
+    'downsizer real estate contact',
     '55+ communities Las Vegas contact',
     'wealth transition planning Las Vegas contact',
     'estate planning advisor contact',
@@ -67,7 +67,7 @@ export default function ContactPage() {
             wealth transition objectives.
           </p>
           <p className="mb-4 text-lg text-gray-900">
-            Whether you need support with empty nester real estate transitions, 55+ community 
+            Whether you need support with downsizer real estate transitions, 55+ community 
             planning, wealth transition strategies, or comprehensive real estate services for your 
             financial planning practice, we provide expert guidance that complements your 
             financial planning recommendations and supports optimal client outcomes.
@@ -118,7 +118,7 @@ export default function ContactPage() {
           <h2 className="text-3xl font-semibold mb-6">Send Us a Message</h2>
           <p className="mb-6 text-lg text-gray-900">
             Use the form below to contact us about real estate services for financial planners, 
-            CFP partnership opportunities, empty nester transitions, 55+ community planning, or 
+            CFP partnership opportunities, downsizer transitions, 55+ community planning, or 
             any questions about how we can support your financial planning practice with expert 
             real estate guidance.
           </p>
@@ -178,7 +178,7 @@ export default function ContactPage() {
               <option value="cfp-partnership">CFP Partnership Inquiry</option>
               <option value="financial-planner-consultation">Financial Planner Las Vegas Free Consultation</option>
               <option value="fiduciary-advisor">Fiduciary Financial Advisor Inquiry</option>
-              <option value="empty-nester">Empty Nester Real Estate Services</option>
+              <option value="downsizer">Downsizer Real Estate Services</option>
               <option value="55-communities">55+ Community Planning</option>
               <option value="wealth-transition">Wealth Transition Real Estate</option>
               <option value="consultation">Schedule Consultation</option>
@@ -299,7 +299,7 @@ export default function ContactPage() {
           <h2 className="text-3xl font-semibold mb-6">Service Area: Las Vegas Metropolitan Region</h2>
           <p className="mb-4 text-lg">
             We serve financial planners and their clients throughout the Las Vegas metropolitan 
-            area, providing expert real estate services including empty nester transitions, 55+ 
+            area, providing expert real estate services including downsizer transitions, 55+ 
             community planning, and wealth transition strategies across the region.
           </p>
           <h3 className="text-2xl font-semibold mb-4">Primary Service Areas</h3>

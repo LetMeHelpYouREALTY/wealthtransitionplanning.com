@@ -11,7 +11,7 @@ export function ServicesHero() {
         </h1>
         <p className="text-xl md:text-2xl mb-6 max-w-3xl mx-auto leading-relaxed font-medium" style={{ color: '#111827' }}>
           First, we listen. Then we help you develop realistic real estate strategies that 
-          complement your financial planning, whether that's supporting empty nester transitions, 
+          complement your financial planning, whether that's supporting downsizer transitions, 
           facilitating 55+ community moves, or planning wealth transition real estate strategies 
           for your clients.
         </p>

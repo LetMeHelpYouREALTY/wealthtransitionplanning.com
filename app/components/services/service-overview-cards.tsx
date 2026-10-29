@@ -10,8 +10,8 @@ interface ServiceCard {
 
 const services: ServiceCard[] = [
   {
-    title: 'Empty Nester Real Estate Services',
-    description: 'Help your clients navigate the transition from family homes to more suitable properties. We specialize in empty nester real estate in Las Vegas, understanding the financial implications, tax considerations, and lifestyle factors that impact your clients\' decisions.',
+    title: 'Downsizer Real Estate Services',
+    description: 'Help your clients navigate the transition from family homes to more suitable properties. We specialize in downsizer real estate in Las Vegas, understanding the financial implications, tax considerations, and lifestyle factors that impact your clients\' decisions.',
     services: [
       'Market timing analysis for optimal sale prices',
       'Downsizing property recommendations',

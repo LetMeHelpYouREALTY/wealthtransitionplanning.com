@@ -5,11 +5,11 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: `Premium Real Estate Resources for Financial Planners | ${businessConfig.name}`,
-  description: 'Premium guides, checklists, and workbooks for financial planners: empty nester transitions, 55+ community planning, wealth transition strategies, and CFP partnership resources.',
+  description: 'Premium guides, checklists, and workbooks for financial planners: downsizer transitions, 55+ community planning, wealth transition strategies, and CFP partnership resources.',
   keywords: [
     'premium real estate resources',
     'financial planner guides',
-    'empty nester checklists',
+    'downsizer checklists',
     '55+ community guides',
     'wealth transition workbooks',
     'CFP resources',
@@ -28,14 +28,14 @@ export default function PremiumResourcesPage() {
   const premiumResources = [
     {
       title: 'Complete Real Estate Planning Guide for Financial Planners',
-      description: '30+ page comprehensive guide covering empty nester transitions, 55+ community planning, wealth transition real estate strategies, and Las Vegas market insights.',
+      description: '30+ page comprehensive guide covering downsizer transitions, 55+ community planning, wealth transition real estate strategies, and Las Vegas market insights.',
       details: 'Topics include market analysis, property recommendations, tax strategies, timing considerations, and integration with financial planning goals.',
       cta: 'Download Free Guide',
       href: '/contact',
     },
     {
-      title: 'Empty Nester Real Estate Checklist for Financial Planners',
-      description: 'Comprehensive step-by-step checklist for empty nesters considering downsizing, including financial considerations, timing factors, tax implications, and decision frameworks.',
+      title: 'Downsizer Real Estate Checklist for Financial Planners',
+      description: 'Comprehensive step-by-step checklist for downsizers considering downsizing, including financial considerations, timing factors, tax implications, and decision frameworks.',
       details: 'Includes market timing analysis, property valuation considerations, downsizing recommendations, and coordination with financial planning strategies.',
       cta: 'Download Checklist',
       href: '/contact',
@@ -64,7 +64,7 @@ export default function PremiumResourcesPage() {
     {
       title: 'Real Estate Planning Timeline for Financial Planners',
       description: 'Detailed timeline for real estate planning in the context of financial planning, including key milestones, decision points, and action items for each stage.',
-      details: 'Covers empty nester transitions, 55+ community planning, wealth transition strategies, and integration with retirement planning, estate planning, and tax strategies.',
+      details: 'Covers downsizer transitions, 55+ community planning, wealth transition strategies, and integration with retirement planning, estate planning, and tax strategies.',
       cta: 'Download Timeline',
       href: '/contact',
     },
@@ -91,7 +91,7 @@ export default function PremiumResourcesPage() {
           <p className="text-xl max-w-3xl mx-auto leading-relaxed" style={{ color: '#111827' }}>
             Download comprehensive guides, checklists, and templates to support your real estate 
             services and enhance your financial planning practice. These premium resources require 
-            email registration to access and provide in-depth guidance on empty nester transitions, 
+            email registration to access and provide in-depth guidance on downsizer transitions, 
             55+ community planning, and wealth transition strategies.
           </p>
         </div>
@@ -118,15 +118,15 @@ export default function PremiumResourcesPage() {
           <h2 className="text-3xl font-bold mb-6" style={{ color: '#111827' }}>Resource Categories</h2>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="p-6 bg-white dark:bg-neutral-900 rounded-lg border border-gray-200 dark:border-neutral-700">
-              <h3 className="text-xl font-semibold mb-3" style={{ color: '#111827' }}>Empty Nester Real Estate Resources</h3>
+              <h3 className="text-xl font-semibold mb-3" style={{ color: '#111827' }}>Downsizer Real Estate Resources</h3>
               <p className="text-sm mb-4" style={{ color: '#111827' }}>
-                Comprehensive guides, checklists, and resources for empty nester real estate 
+                Comprehensive guides, checklists, and resources for downsizer real estate 
                 transitions. These resources help financial planners guide clients through 
                 downsizing decisions that support financial goals and retirement planning.
               </p>
               <h4 className="text-lg font-semibold mb-2" style={{ color: '#111827' }}>Resources Include:</h4>
               <ul className="list-disc pl-6 space-y-1 text-sm" style={{ color: '#111827' }}>
-                <li>Empty nester transition guides</li>
+                <li>Downsizer transition guides</li>
                 <li>Downsizing decision frameworks</li>
                 <li>Market timing analysis tools</li>
                 <li>Tax strategy considerations</li>

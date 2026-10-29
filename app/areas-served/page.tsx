@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     'financial planner Henderson',
     'real estate services Summerlin',
     '55+ communities North Las Vegas',
-    'empty nester real estate Las Vegas area',
+    'downsizer real estate Las Vegas area',
     'financial planning services Las Vegas metro',
   ],
   openGraph: {
@@ -34,7 +34,7 @@ const areas = [
   },
   {
     name: 'Henderson',
-    description: 'Expert services for Henderson residents navigating empty nester transitions and 55+ community planning.',
+    description: 'Expert services for Henderson residents navigating downsizer transitions and 55+ community planning.',
     highlights: ['Green Valley', 'Anthem', 'MacDonald Ranch'],
   },
   {
@@ -114,7 +114,7 @@ export default function AreasServedPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Empty Nester Services</h3>
+            <h3 className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-2">Downsizer Services</h3>
             <p className="text-gray-900 dark:text-gray-100">
               Help downsizing from family homes to more manageable properties
             </p>

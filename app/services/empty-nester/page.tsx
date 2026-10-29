@@ -6,23 +6,23 @@ import { FinancialCheckupCTA } from 'app/components/services/financial-checkup-c
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Empty Nester Real Estate Services Las Vegas | Financial Planner Support | Wealth Transition Planning',
-  description: 'Expert empty nester real estate services in Las Vegas for CERTIFIED Financial Planner clients. Specialized downsizing, market timing, and tax-efficient transitions coordinated with financial planning goals.',
+  title: 'Downsizer Real Estate Services Las Vegas | Financial Planner Support | Wealth Transition Planning',
+  description: 'Expert downsizer real estate services in Las Vegas for CERTIFIED Financial Planner clients. Specialized downsizing, market timing, and tax-efficient transitions coordinated with financial planning goals.',
   keywords: [
-    'empty nester real estate Las Vegas',
+    'downsizer real estate Las Vegas',
     'downsizing real estate Las Vegas',
-    'empty nester real estate services',
-    'financial planner empty nester support',
-    'CFP empty nester transitions',
+    'downsizer real estate services',
+    'financial planner downsizer support',
+    'CFP downsizer transitions',
     'Las Vegas downsizing services',
-    'empty nester property transitions',
-    'real estate for empty nesters',
+    'downsizer property transitions',
+    'real estate for downsizers',
     'downsizing strategies Las Vegas',
-    'empty nester financial planning',
+    'downsizer financial planning',
   ],
   openGraph: {
-    title: 'Empty Nester Real Estate Services Las Vegas | Financial Planner Support',
-    description: 'Expert empty nester real estate services in Las Vegas coordinated with financial planning goals.',
+    title: 'Downsizer Real Estate Services Las Vegas | Financial Planner Support',
+    description: 'Expert downsizer real estate services in Las Vegas coordinated with financial planning goals.',
     url: `${baseUrl}/services/empty-nester`,
     siteName: businessConfig.name,
     locale: 'en_US',
@@ -40,15 +40,15 @@ export default function EmptyNesterServicesPage() {
           <li className="flex items-center">/</li>
           <li className="flex items-center"><Link href="/services" className="hover:underline">Services</Link></li>
           <li className="flex items-center">/</li>
-            <li className="text-neutral-900 dark:text-neutral-100">Empty Nester Services</li>
+            <li className="text-neutral-900 dark:text-neutral-100">Downsizer Services</li>
           </ol>
         </nav>
       <article className="prose prose-lg max-w-none">
         {/* Hero Section */}
         <section className="mb-16 text-center">
-          <h1 className="text-5xl font-bold mb-6">Empty Nester Real Estate Services in Las Vegas</h1>
+          <h1 className="text-5xl font-bold mb-6">Downsizer Real Estate Services in Las Vegas</h1>
           <p className="text-2xl text-gray-900 mb-8 max-w-3xl mx-auto">
-            Expert real estate guidance for empty nesters transitioning from family homes to properties 
+            Expert real estate guidance for downsizers transitioning from family homes to properties 
             that better suit their current lifestyle and financial situation. Coordinated with your 
             financial planning goals.
           </p>
@@ -56,16 +56,16 @@ export default function EmptyNesterServicesPage() {
 
         {/* Overview */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-8">Comprehensive Empty Nester Real Estate Services</h2>
+          <h2 className="text-4xl font-bold mb-8">Comprehensive Downsizer Real Estate Services</h2>
           <p className="text-lg mb-6" style={{ color: '#111827' }}>
-            Empty nesters face unique real estate challenges that require specialized expertise. When 
+            Downsizers face unique real estate challenges that require specialized expertise. When 
             your clients' children have moved out, they often need to transition from large family 
             homes to properties that better suit their current lifestyle and financial situation. 
             This transition involves complex considerations that impact their financial plans, tax 
             situations, and retirement strategies.
           </p>
           <p className="text-lg mb-6" style={{ color: '#111827' }}>
-            Our empty nester real estate services in Las Vegas help your clients navigate this 
+            Our downsizer real estate services in Las Vegas help your clients navigate this 
             transition successfully. We provide comprehensive market analysis to determine optimal 
             timing for selling their current property, identify suitable downsizing options that 
             align with their lifestyle goals, and coordinate the transaction to minimize tax 
@@ -81,7 +81,7 @@ export default function EmptyNesterServicesPage() {
 
         {/* Services Detail */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-8">Empty Nester Services Include</h2>
+          <h2 className="text-4xl font-bold mb-8">Downsizer Services Include</h2>
           
           <div className="space-y-8">
             <div className="p-8 bg-blue-50 dark:bg-blue-900/20 rounded-xl">
@@ -216,8 +216,8 @@ export default function EmptyNesterServicesPage() {
         <section className="mb-16">
           <h2 className="text-4xl font-bold mb-8">Financial Planning Integration</h2>
           <p className="text-lg mb-6" style={{ color: '#111827' }}>
-            Our empty nester real estate services are specifically designed to integrate seamlessly 
-            with financial planning practices. We understand that empty nester transitions impact 
+            Our downsizer real estate services are specifically designed to integrate seamlessly 
+            with financial planning practices. We understand that downsizer transitions impact 
             retirement planning, tax strategies, estate planning, and overall financial security, 
             and our services ensure that every recommendation supports your comprehensive planning goals.
           </p>
@@ -240,9 +240,9 @@ export default function EmptyNesterServicesPage() {
               </ul>
             </div>
             <div className="p-8 border border-neutral-200 dark:border-neutral-800 rounded-lg">
-              <h3 className="text-2xl font-semibold mb-4 style={{ color: '#111827' }}">For Empty Nester Clients</h3>
+              <h3 className="text-2xl font-semibold mb-4 style={{ color: '#111827' }}">For Downsizer Clients</h3>
               <p className="mb-4 style={{ color: '#111827' }}">
-                If you're an empty nester working with a financial planner, our services ensure 
+                If you're a downsizer working with a financial planner, our services ensure 
                 that all real estate recommendations are coordinated with your financial planner's 
                 recommendations. This coordination ensures that your property transition supports 
                 your financial goals and maximizes outcomes.
@@ -261,7 +261,7 @@ export default function EmptyNesterServicesPage() {
 
         {/* FAQ Section */}
         <section className="mb-16">
-          <h2 className="text-4xl font-bold mb-8">Frequently Asked Questions About Empty Nester Real Estate</h2>
+          <h2 className="text-4xl font-bold mb-8">Frequently Asked Questions About Downsizer Real Estate</h2>
           <div className="max-w-4xl mx-auto">
             <TargetFAQ category="emptyNester" />
             <div className="space-y-6 mt-8">
@@ -280,9 +280,9 @@ export default function EmptyNesterServicesPage() {
 
         {/* CTA Section */}
         <section className="mb-16 p-12 bg-blue-50 dark:bg-blue-900/20 rounded-2xl text-center">
-          <h2 className="text-3xl font-semibold mb-4" style={{ color: '#111827' }}>Ready to Help Your Empty Nester Clients?</h2>
+          <h2 className="text-3xl font-semibold mb-4" style={{ color: '#111827' }}>Ready to Help Your Downsizer Clients?</h2>
           <p className="mb-6 text-lg max-w-2xl mx-auto style={{ color: '#1f2937' }}">
-            Contact us today to learn how our empty nester real estate services can support your 
+            Contact us today to learn how our downsizer real estate services can support your 
             financial planning practice and help your clients achieve successful property transitions.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
