@@ -4,6 +4,7 @@ import { baseUrl } from 'app/sitemap'
 import { ContactButtons } from 'app/components/google/contact-buttons'
 import { FinancialCheckupCTA } from 'app/components/services/financial-checkup-cta'
 import { TestimonialCards } from 'app/components/testimonials/testimonial-cards'
+import { ReviewSchema, BreadcrumbSchema } from 'app/components/google'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -74,8 +75,25 @@ const testimonials = [
 ]
 
 export default function TestimonialsPage() {
+  // 2025: Format reviews for schema
+  const reviewsForSchema = testimonials.map((t) => ({
+    author: t.name,
+    reviewBody: t.content,
+    reviewRating: t.rating,
+    datePublished: '2024-10-15', // UPDATE with actual dates if available
+  }))
+
+  // 2025: Breadcrumb items for schema
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Testimonials', url: '/testimonials' },
+  ]
+
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      {/* 2025: Enhanced Schema Markup for Reviews */}
+      <ReviewSchema reviews={reviewsForSchema} />
+      <BreadcrumbSchema items={breadcrumbItems} />
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold mb-4" style={{ color: '#111827' }}>

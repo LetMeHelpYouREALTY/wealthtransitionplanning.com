@@ -3,6 +3,7 @@ import { CustomMDX } from 'app/components/mdx'
 import { formatDate, getBlogPosts } from 'app/blog/utils'
 import { baseUrl } from 'app/sitemap'
 import { businessConfig } from 'app/config/business'
+import { ArticleSchema, BreadcrumbSchema, SpeakableSchema } from 'app/components/google'
 
 export async function generateStaticParams() {
   let posts = getBlogPosts()
@@ -61,29 +62,38 @@ export default function Blog({ params }) {
     notFound()
   }
 
+  // 2025: Enhanced schema markup
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Blog', url: '/blog' },
+    { name: post.metadata.title, url: `/blog/${post.slug}` },
+  ]
+
+  // Estimate word count from content (rough approximation)
+  const wordCount = post.content.split(/\s+/).length
+
   return (
     <section>
-      <script
-        type="application/ld+json"
-        suppressHydrationWarning
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'BlogPosting',
-            headline: post.metadata.title,
-            datePublished: post.metadata.publishedAt,
-            dateModified: post.metadata.publishedAt,
-            description: post.metadata.summary,
-            image: post.metadata.image
-              ? `${baseUrl}${post.metadata.image}`
-              : `/og?title=${encodeURIComponent(post.metadata.title)}`,
-            url: `${baseUrl}/blog/${post.slug}`,
-            author: {
-              '@type': 'Person',
-              name: 'Dr. Janet Duffy',
-            },
-          }),
-        }}
+      {/* 2025: Enhanced Article Schema */}
+      <ArticleSchema
+        headline={post.metadata.title}
+        description={post.metadata.summary}
+        datePublished={post.metadata.publishedAt}
+        dateModified={post.metadata.publishedAt}
+        authorName={businessConfig.owner}
+        slug={post.slug}
+        image={post.metadata.image}
+        keywords={post.metadata.keywords || businessConfig.keywords}
+        wordCount={wordCount}
+      />
+      
+      {/* Breadcrumb Schema */}
+      <BreadcrumbSchema items={breadcrumbItems} />
+      
+      {/* Speakable Schema for voice search */}
+      <SpeakableSchema
+        pageUrl={`/blog/${post.slug}`}
+        cssSelectors={['h1', '.prose p:first-of-type', '.prose h2']}
       />
       <h1 className="title font-semibold text-2xl tracking-tighter">
         {post.metadata.title}

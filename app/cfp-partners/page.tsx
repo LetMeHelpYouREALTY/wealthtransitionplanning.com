@@ -453,8 +453,8 @@ export default function CFPPartnersPage() {
           </p>
           <div className="grid md:grid-cols-2 gap-6 mb-6">
             <div className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Client Education Materials</h3>
-              <ul className="list-disc pl-6 space-y-2">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Client Education Materials</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-900 dark:text-gray-200">
                 <li>Empty nester real estate transition guides</li>
                 <li>55+ community planning resources</li>
                 <li>Wealth transition real estate materials</li>
@@ -463,8 +463,8 @@ export default function CFPPartnersPage() {
               </ul>
             </div>
             <div className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Partnership Marketing Materials</h3>
-              <ul className="list-disc pl-6 space-y-2">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Partnership Marketing Materials</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-900 dark:text-gray-200">
                 <li>Partnership program descriptions</li>
                 <li>Service offering presentations</li>
                 <li>Client communication templates</li>
@@ -473,8 +473,8 @@ export default function CFPPartnersPage() {
               </ul>
             </div>
             <div className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Case Study Examples</h3>
-              <ul className="list-disc pl-6 space-y-2">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Case Study Examples</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-900 dark:text-gray-200">
                 <li>Empty nester transition case studies</li>
                 <li>55+ community planning examples</li>
                 <li>Wealth transition success stories</li>
@@ -483,8 +483,8 @@ export default function CFPPartnersPage() {
               </ul>
             </div>
             <div className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Direct Consultation Support</h3>
-              <ul className="list-disc pl-6 space-y-2">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Direct Consultation Support</h3>
+              <ul className="list-disc pl-6 space-y-2 text-gray-900 dark:text-gray-200">
                 <li>Complex real estate scenario analysis</li>
                 <li>Market timing consultations</li>
                 <li>Property evaluation support</li>
@@ -509,8 +509,8 @@ export default function CFPPartnersPage() {
             <div className="space-y-6 mt-8">
               {targetFAQQuestions.financialPlanner.slice(0, 3).map((faq, index) => (
                 <div key={index} className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-gray-900">{faq.answer}</p>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">{faq.question}</h3>
+                  <p className="text-gray-900 dark:text-gray-200">{faq.answer}</p>
                 </div>
               ))}
             </div>

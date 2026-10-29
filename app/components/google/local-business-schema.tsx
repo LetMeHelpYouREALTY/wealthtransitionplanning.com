@@ -54,38 +54,92 @@ export function LocalBusinessSchema() {
         longitude: -115.1398, // UPDATE with actual
       },
     },
-    // Additional properties for financial planner searches
+    // Additional properties for realtor services
     knowsAbout: [
-      'CERTIFIED Financial Planner Support',
-      'Fiduciary Financial Advisor Services',
+      'Real Estate Services for Financial Planners',
+      'Buyer Representation',
+      'Seller Representation',
+      'Investment Property Services',
       'Empty Nester Real Estate Transitions',
       '55+ Community Planning',
       'Wealth Transition Real Estate',
+      'Luxury Home Sales',
       'Las Vegas Real Estate Market',
+      'CFA Client Real Estate Services',
     ],
     makesOffer: {
       '@type': 'Offer',
       itemOffered: {
         '@type': 'Service',
         name: 'Real Estate Services for Financial Planners',
-        description: 'Comprehensive real estate services designed to support CERTIFIED Financial Planners and fiduciary advisors in Las Vegas.',
+        description: 'Professional realtor services designed to support CERTIFIED Financial Advisors (CFAs) and their clients in Las Vegas.',
       },
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Financial Planning Services',
-      itemListElement: businessConfig.services.map((service, index) => ({
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: service,
-          provider: {
-            '@type': 'LocalBusiness',
-            name: businessConfig.name,
+      name: 'Real Estate Services',
+      itemListElement: [
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Buyer Representation',
+            provider: {
+              '@type': 'LocalBusiness',
+              name: businessConfig.name,
+            },
           },
+          position: 1,
         },
-        position: index + 1,
-      })),
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Seller Representation',
+            provider: {
+              '@type': 'LocalBusiness',
+              name: businessConfig.name,
+            },
+          },
+          position: 2,
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Investment Property Services',
+            provider: {
+              '@type': 'LocalBusiness',
+              name: businessConfig.name,
+            },
+          },
+          position: 3,
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Empty Nester Real Estate Services',
+            provider: {
+              '@type': 'LocalBusiness',
+              name: businessConfig.name,
+            },
+          },
+          position: 4,
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: '55+ Community Planning',
+            provider: {
+              '@type': 'LocalBusiness',
+              name: businessConfig.name,
+            },
+          },
+          position: 5,
+        },
+      ],
     },
     sameAs: [
       businessConfig.googleBusinessProfileUrl,

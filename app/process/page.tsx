@@ -3,6 +3,7 @@ import { businessConfig } from 'app/config/business'
 import { baseUrl } from 'app/sitemap'
 import { FinancialCheckupCTA } from 'app/components/services/financial-checkup-cta'
 import { ProcessTimeline } from 'app/components/process/process-timeline'
+import { HowToSchema, BreadcrumbSchema } from 'app/components/google'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -96,8 +97,30 @@ const processSteps = [
 ]
 
 export default function ProcessPage() {
+  // 2025: Format steps for HowTo schema
+  const howToSteps = processSteps.map((step) => ({
+    name: step.title,
+    text: step.description,
+    url: `/process#step-${step.step}`,
+  }))
+
+  // 2025: Breadcrumb items for schema
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'Our Process', url: '/process' },
+  ]
+
   return (
     <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      {/* 2025: Enhanced Schema Markup */}
+      <HowToSchema
+        name="How to Plan Your Wealth Transition"
+        description="A comprehensive step-by-step guide to wealth transition planning with Dr. Jan Duffy"
+        steps={howToSteps}
+        totalTime="PT2H" // Estimated 2 hours for consultation
+        pageUrl="/process"
+      />
+      <BreadcrumbSchema items={breadcrumbItems} />
       {/* Header */}
       <div className="text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

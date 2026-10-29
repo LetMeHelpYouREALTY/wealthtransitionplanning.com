@@ -115,7 +115,7 @@ export default function ServiceTierPage({ params }: { params: { tier: string } }
               <div key={index} className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
                 <div className="flex items-start">
                   <span className="text-blue-600 dark:text-blue-400 mr-3 text-2xl font-bold">{index + 1}.</span>
-                  <p className="text-lg">{item}</p>
+                  <p className="text-lg text-gray-900 dark:text-gray-200">{item}</p>
                 </div>
               </div>
             ))}

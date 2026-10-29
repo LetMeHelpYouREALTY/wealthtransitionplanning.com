@@ -267,8 +267,8 @@ export default function EmptyNesterServicesPage() {
             <div className="space-y-6 mt-8">
               {targetFAQQuestions.emptyNester.map((faq, index) => (
                 <div key={index} className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-gray-900">{faq.answer}</p>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">{faq.question}</h3>
+                  <p className="text-gray-900 dark:text-gray-200">{faq.answer}</p>
                 </div>
               ))}
             </div>

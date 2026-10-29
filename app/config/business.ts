@@ -13,12 +13,12 @@ export const businessConfig = {
   
   // Contact Information - MUST match GBP exactly
   address: {
-    street: '123 Main Street', // UPDATE: Your actual street address
+    street: '8925 W Post Rd',
     city: 'Las Vegas',
     state: 'NV',
-    zipCode: '89101', // UPDATE: Your actual ZIP code
+    zipCode: '89148',
     country: 'United States',
-    full: '123 Main Street, Las Vegas, NV 89101', // UPDATE: Full formatted address matching GBP
+    full: '8925 W Post Rd, Las Vegas, NV 89148',
   },
   
   phone: '(702) 555-1234', // UPDATE: Your actual phone number matching GBP
@@ -41,12 +41,16 @@ export const businessConfig = {
   },
   
   // Business Type and Services
-  type: 'Financial Planning Service', // Primary business type
+  type: 'Real Estate Agency', // Primary business type
   services: [
-    'Wealth Transition Planning',
-    'Estate Planning',
-    'Financial Planning',
-    'Retirement Planning',
+    'Buyer Representation',
+    'Seller Representation',
+    'Investment Property Services',
+    'Luxury Home Sales',
+    'Empty Nester Real Estate Services',
+    '55+ Community Planning',
+    'Real Estate Market Analysis',
+    'Property Valuations',
   ],
   
   // Service Area

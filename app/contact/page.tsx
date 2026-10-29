@@ -7,6 +7,8 @@ import { ContactButtons } from 'app/components/google/contact-buttons'
 import { TargetFAQ, targetFAQQuestions } from 'app/components/faq-target-questions'
 import { ContactHero } from 'app/components/contact/contact-hero'
 import { ContactInfoSection } from 'app/components/contact/contact-info-section'
+import { EnhancedContactForm } from 'app/components/forms/enhanced-contact-form'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -113,16 +115,24 @@ export default function ContactPage() {
         {/* Improved Contact Information Section */}
         <ContactInfoSection />
 
-        {/* Contact Form */}
-        <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Send Us a Message</h2>
-          <p className="mb-6 text-lg text-gray-900">
-            Use the form below to contact us about real estate services for financial planners, 
-            CFP partnership opportunities, empty nester transitions, 55+ community planning, or 
-            any questions about how we can support your financial planning practice with expert 
-            real estate guidance.
-          </p>
-          <form className="space-y-6" action="/thank-you" method="POST">
+        {/* Contact Form - Enhanced */}
+        <section className="mb-12 py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-white to-blue-50 border-2 border-blue-100 rounded-2xl shadow-xl">
+          <div className="max-w-3xl mx-auto">
+            <div className="text-center mb-10">
+              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Send Us a Message</h2>
+              <p className="text-lg md:text-xl text-gray-700 leading-relaxed max-w-2xl mx-auto">
+                Use the form below to contact us about real estate services for financial planners, 
+                CFP partnership opportunities, empty nester transitions, 55+ community planning, or 
+                any questions about how we can support your financial planning practice with expert 
+                real estate services.
+              </p>
+            </div>
+            <EnhancedContactForm />
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">
                 Name *
@@ -132,7 +142,7 @@ export default function ContactPage() {
                 id="name"
                 name="name"
                 required
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900"
+                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-100"
                 placeholder="Your full name"
               />
             </div>
@@ -146,7 +156,7 @@ export default function ContactPage() {
                 id="email"
                 name="email"
                 required
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900"
+                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-100"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -159,29 +169,31 @@ export default function ContactPage() {
                 type="tel"
                 id="phone"
                 name="phone"
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900"
+                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-100"
                 placeholder="(702) 555-1234"
               />
             </div>
 
             <div>
-              <label htmlFor="subject" className="block text-sm font-medium mb-2">
+              <label htmlFor="subject" className="block text-sm font-medium mb-2 text-gray-900">
                 Subject *
               </label>
               <select
                 id="subject"
                 name="subject"
                 required
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900"
+                className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg bg-white text-gray-900 focus:border-blue-500 focus:ring-2 focus:ring-blue-200 transition-all"
               >
                 <option value="">Select a subject...</option>
-              <option value="cfp-partnership">CFP Partnership Inquiry</option>
-              <option value="financial-planner-consultation">Financial Planner Las Vegas Free Consultation</option>
-              <option value="fiduciary-advisor">Fiduciary Financial Advisor Inquiry</option>
+              <option value="cfp-partnership">CFA/CFP Partnership Inquiry</option>
+              <option value="buyer-representation">Buyer Representation Services</option>
+              <option value="seller-representation">Seller Representation Services</option>
+              <option value="investment-property">Investment Property Services</option>
+              <option value="market-analysis">Market Analysis & Consulting</option>
               <option value="empty-nester">Empty Nester Real Estate Services</option>
               <option value="55-communities">55+ Community Planning</option>
-              <option value="wealth-transition">Wealth Transition Real Estate</option>
-              <option value="consultation">Schedule Consultation</option>
+              <option value="luxury-homes">Luxury Home Services</option>
+              <option value="consultation">Schedule Free Consultation</option>
               <option value="resources">Resource Request</option>
               <option value="general">General Inquiry</option>
               </select>
@@ -196,23 +208,24 @@ export default function ContactPage() {
                 name="message"
                 rows={6}
                 required
-                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900"
+                className="w-full px-4 py-2 border border-neutral-300 dark:border-neutral-700 rounded-lg bg-white dark:bg-neutral-900 text-gray-900 dark:text-gray-100"
                 placeholder="Tell us about your real estate service needs, partnership interests, or questions about how we can support your financial planning practice..."
               />
             </div>
 
             <button
               type="submit"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              className="w-full px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:shadow-xl transition-all font-semibold text-lg transform hover:-translate-y-0.5"
             >
               Send Message
             </button>
           </form>
-          <p className="mt-4 text-sm text-gray-900">
+          <p className="mt-6 text-sm text-gray-700 text-center leading-relaxed">
             * Required fields. We'll respond to your inquiry within 24-48 hours. For urgent 
             matters related to real estate transactions or financial planning coordination, 
-            please call us directly.
+            please call us directly at <a href={getPhoneLink()} className="text-blue-600 hover:underline font-semibold">{businessConfig.phone}</a>.
           </p>
+          </div>
         </section>
 
         {/* What to Expect */}
@@ -227,15 +240,15 @@ export default function ContactPage() {
           
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Initial Consultation Process</h3>
-              <p className="mb-4 text-gray-900">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Initial Consultation Process</h3>
+              <p className="mb-4 text-gray-900 dark:text-gray-200">
                 Our initial consultation is designed to understand your specific needs, whether 
                 you're a financial planner exploring partnership opportunities or a client 
                 seeking real estate guidance. We'll discuss your situation, goals, and how our 
                 real estate services can support your objectives.
               </p>
-              <h4 className="text-lg font-semibold mb-2">Consultation Includes:</h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm">
+              <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">Consultation Includes:</h4>
+              <ul className="list-disc pl-6 space-y-1 text-sm text-gray-900 dark:text-gray-200">
                 <li>Discussion of your real estate service needs</li>
                 <li>Review of your financial planning context</li>
                 <li>Assessment of how we can support your goals</li>
@@ -245,15 +258,15 @@ export default function ContactPage() {
             </div>
 
             <div className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-              <h3 className="text-xl font-semibold mb-3">Response Time and Communication</h3>
-              <p className="mb-4 text-gray-900">
+              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">Response Time and Communication</h3>
+              <p className="mb-4 text-gray-900 dark:text-gray-200">
                 We understand that real estate decisions often have timing considerations that 
                 impact financial planning strategies. We respond to all inquiries within 24-48 
                 hours and prioritize urgent matters related to active transactions or time-sensitive 
                 financial planning coordination.
               </p>
-              <h4 className="text-lg font-semibold mb-2">Communication Methods:</h4>
-              <ul className="list-disc pl-6 space-y-1 text-sm">
+              <h4 className="text-lg font-semibold mb-2 text-gray-900 dark:text-gray-100">Communication Methods:</h4>
+              <ul className="list-disc pl-6 space-y-1 text-sm text-gray-900 dark:text-gray-200">
                 <li>Email responses within 24-48 hours</li>
                 <li>Phone consultations by appointment</li>
                 <li>In-person meetings at our Las Vegas office</li>
@@ -264,16 +277,32 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Google Maps */}
+        {/* Office Location - Enhanced */}
         <section className="mb-12">
-          <h2 className="text-3xl font-semibold mb-6">Find Us: Las Vegas Office Location</h2>
-          <p className="mb-4 text-lg">
-            Our office is conveniently located in Las Vegas, Nevada, serving financial planners 
-            and their clients throughout the Las Vegas metropolitan area. Visit us to discuss 
-            real estate services, explore partnership opportunities, or learn more about how we 
-            can support your financial planning practice.
-          </p>
-          <div className="mb-4">
+          <div className="mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Find Us: Las Vegas Office Location</h2>
+            <p className="mb-6 text-lg md:text-xl text-gray-900 max-w-3xl leading-relaxed font-medium">
+              Our office is conveniently located at <strong>8925 W Post Rd</strong> in Las Vegas, Nevada, serving financial planners 
+              and their clients throughout the Las Vegas metropolitan area. Visit us to discuss 
+              real estate services, explore partnership opportunities, or learn more about how we 
+              can support your financial planning practice.
+            </p>
+          </div>
+          
+          {/* Office Complex Aerial View */}
+          <div className="mb-6 rounded-xl overflow-hidden shadow-xl relative h-64 md:h-96">
+            <Image
+              src="/images/office-complex-aerial.jpg"
+              alt="Aerial view of office complex at 8925 W Post Rd, Las Vegas - showing our professional business location"
+              fill
+              className="object-cover"
+              sizes="100vw"
+              loading="lazy"
+              priority={false}
+            />
+          </div>
+          
+          <div className="mb-6">
             <GoogleMaps width="100%" height="450px" />
           </div>
           <p className="text-sm text-gray-900 mb-4">
@@ -332,36 +361,40 @@ export default function ContactPage() {
             <div className="space-y-6 mt-8">
               {targetFAQQuestions.financialPlanner.map((faq, index) => (
                 <div key={index} className="p-6 bg-neutral-50 dark:bg-neutral-900 rounded-lg">
-                  <h3 className="text-xl font-semibold mb-3">{faq.question}</h3>
-                  <p className="text-gray-900">{faq.answer}</p>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-gray-100">{faq.question}</h3>
+                  <p className="text-gray-900 dark:text-gray-200">{faq.answer}</p>
                 </div>
               ))}
             </div>
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="mb-12 p-8 bg-blue-50 dark:bg-blue-900/20 rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4">Ready to Get Started?</h2>
-          <p className="mb-6 text-lg">
-            Whether you're a CERTIFIED Financial Planner exploring real estate service partnerships 
-            or a client seeking expert real estate guidance that complements your financial planning, 
-            we're here to help. Contact us today to schedule a free consultation and learn how our 
-            real estate services can support your practice or assist with your property goals.
-          </p>
-          <div className="flex flex-wrap gap-4">
-            <Link
-              href="/contact"
-              className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              Financial Advisor Las Vegas Free Consultation
-            </Link>
-            <Link
-              href="/cfp-partners"
-              className="inline-block px-6 py-3 border border-blue-600 text-blue-600 dark:text-blue-400 rounded-lg hover:bg-blue-50 dark:hover:bg-blue-900/40 transition-colors font-medium"
-            >
-              Learn About CFP Partnerships
-            </Link>
+        {/* CTA Section - Enhanced */}
+        <section className="mb-12 py-12 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center shadow-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white leading-tight">
+              Ready to Get Started?
+            </h2>
+            <p className="mb-8 text-lg md:text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed font-medium">
+              Whether you're a CERTIFIED Financial Advisor exploring realtor service partnerships 
+              or a client seeking expert real estate guidance that complements your financial planning, 
+              we're here to help. Contact us today to schedule a free consultation and learn how our 
+              real estate services can support your practice or assist with your property goals.
+            </p>
+            <div className="flex flex-col sm:flex-row justify-center gap-4">
+              <Link
+                href="/contact"
+                className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all font-semibold text-lg transform hover:-translate-y-0.5"
+              >
+                Schedule Free Consultation
+              </Link>
+              <Link
+                href="/cfp-partners"
+                className="inline-block px-8 py-4 bg-transparent border-2 border-white text-white rounded-lg hover:bg-white/10 transition-all font-semibold text-lg"
+              >
+                Learn About CFA Partnerships
+              </Link>
+            </div>
           </div>
         </section>
 

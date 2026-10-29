@@ -1,16 +1,35 @@
 @import 'tailwindcss';
 
-/* Color scheme with improved contrast for readability */
+/* Professional Color Scheme - Navy & Gold for Financial Services */
 :root {
+  /* Primary Colors - Navy Blue (Trust & Professionalism) */
+  --primary-navy: #1e3a8a;
+  --primary-navy-dark: #1e40af;
+  --primary-navy-light: #3b82f6;
   --primary-blue: #2563eb;
   --primary-blue-hover: #1d4ed8;
+  
+  /* Accent Colors - Gold/Warm (Wealth & Premium) */
+  --accent-gold: #d4af37;
+  --accent-gold-light: #f4d03f;
+  --accent-gold-dark: #b8941a;
+  --accent-warm: #f59e0b;
+  
+  /* Neutral Colors */
   --text-gray-900: #111827;
   --text-gray-800: #1f2937;
   --text-gray-700: #374151;
   --text-gray-600: #4b5563;
   --text-gray-400: #9ca3af;
   --bg-white: #ffffff;
+  --bg-cream: #fefbf3;
+  --bg-navy-light: #f0f4f8;
   --border-gray: #e5e7eb;
+  --border-navy: #cbd5e1;
+  
+  /* Trust & Professional Colors */
+  --trust-green: #10b981;
+  --trust-blue: #3b82f6;
 }
 
 /* Base typography improvements for readability */
@@ -526,19 +545,136 @@ table {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
+/* Professional CTA Gradients */
 .cta-gradient {
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  box-shadow: 0 4px 14px 0 rgba(30, 58, 138, 0.25);
 }
 
 .cta-gradient:hover {
-  background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%);
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  box-shadow: 0 6px 20px 0 rgba(30, 58, 138, 0.35);
+  transform: translateY(-2px);
+}
+
+/* Premium Gold Accent Gradient */
+.cta-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+  color: #1e3a8a;
+  font-weight: 700;
+  box-shadow: 0 4px 14px 0 rgba(212, 175, 55, 0.25);
+}
+
+.cta-gold:hover {
+  background: linear-gradient(135deg, #f4d03f 0%, #d4af37 100%);
+  box-shadow: 0 6px 20px 0 rgba(212, 175, 55, 0.35);
+  transform: translateY(-2px);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Professional Section Backgrounds */
+.section-navy {
+  background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+  color: #ffffff;
+}
+
+.section-cream {
+  background: #fefbf3;
+}
+
+.section-navy-light {
+  background: #f0f4f8;
+}
+
+/* Professional Card Styles */
+.card-professional {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.card-professional:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transform: translateY(-4px);
+  border-color: #3b82f6;
+}
+
+/* Trust Badge Styles */
+.trust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #f0f9ff;
+  border: 1px solid #3b82f6;
+  border-radius: 0.5rem;
+  color: #1e3a8a;
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+/* Professional Button Styles */
+.btn-primary {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+  color: #ffffff;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px 0 rgba(30, 58, 138, 0.25);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #1e40af 0%, #1e3a8a 100%);
+  box-shadow: 0 6px 20px 0 rgba(30, 58, 138, 0.35);
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #ffffff;
+  color: #1e3a8a;
+  padding: 0.75rem 2rem;
+  border: 2px solid #1e3a8a;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+  background: #1e3a8a;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+.btn-gold {
+  background: linear-gradient(135deg, #d4af37 0%, #f4d03f 100%);
+  color: #1e3a8a;
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 14px 0 rgba(212, 175, 55, 0.25);
+}
+
+.btn-gold:hover {
+  background: linear-gradient(135deg, #f4d03f 0%, #d4af37 100%);
+  box-shadow: 0 6px 20px 0 rgba(212, 175, 55, 0.35);
+  transform: translateY(-2px);
 }
 
 /* Improve text readability on dark backgrounds */
@@ -613,4 +749,56 @@ section.hero-gradient,
 section.hero-gradient *,
 .hero-gradient * {
   color: #111827 !important;
+}
+
+/* Fix contrast for dark background sections - CRITICAL */
+/* Ensure text is light on dark backgrounds */
+[class*="dark:bg-neutral-900"],
+[class*="dark:bg-gray-900"],
+.dark\:bg-neutral-900,
+.dark\:bg-gray-900 {
+  color: #f3f4f6 !important;
+}
+
+[class*="dark:bg-neutral-900"] *,
+[class*="dark:bg-gray-900"] *,
+.dark\:bg-neutral-900 *,
+.dark\:bg-gray-900 * {
+  color: #f3f4f6 !important;
+}
+
+/* Specific elements in dark backgrounds */
+[class*="dark:bg-neutral-900"] h1,
+[class*="dark:bg-neutral-900"] h2,
+[class*="dark:bg-neutral-900"] h3,
+[class*="dark:bg-neutral-900"] h4,
+[class*="dark:bg-neutral-900"] h5,
+[class*="dark:bg-neutral-900"] h6,
+[class*="dark:bg-neutral-900"] p,
+[class*="dark:bg-neutral-900"] li,
+[class*="dark:bg-neutral-900"] span,
+[class*="dark:bg-neutral-900"] div,
+[class*="dark:bg-gray-900"] h1,
+[class*="dark:bg-gray-900"] h2,
+[class*="dark:bg-gray-900"] h3,
+[class*="dark:bg-gray-900"] h4,
+[class*="dark:bg-gray-900"] h5,
+[class*="dark:bg-gray-900"] h6,
+[class*="dark:bg-gray-900"] p,
+[class*="dark:bg-gray-900"] li,
+[class*="dark:bg-gray-900"] span,
+[class*="dark:bg-gray-900"] div {
+  color: #f3f4f6 !important;
+}
+
+/* Override any dark text classes inside dark backgrounds */
+@media (prefers-color-scheme: dark) {
+  [class*="dark:bg-neutral-900"] [class*="text-gray-900"],
+  [class*="dark:bg-neutral-900"] [class*="text-gray-800"],
+  [class*="dark:bg-neutral-900"] [class*="text-gray-700"],
+  [class*="dark:bg-gray-900"] [class*="text-gray-900"],
+  [class*="dark:bg-gray-900"] [class*="text-gray-800"],
+  [class*="dark:bg-gray-900"] [class*="text-gray-700"] {
+    color: #f3f4f6 !important;
+  }
 }

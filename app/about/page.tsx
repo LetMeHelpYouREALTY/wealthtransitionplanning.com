@@ -2,11 +2,13 @@ import type { Metadata } from 'next'
 import { businessConfig } from 'app/config/business'
 import { baseUrl } from 'app/sitemap'
 import { LocalBusinessSchema } from 'app/components/google/local-business-schema'
+import { PersonSchema, BreadcrumbSchema } from 'app/components/google'
 import { FAQSchema } from 'app/components/faq-schema'
 import { TargetFAQ, targetFAQQuestions } from 'app/components/faq-target-questions'
 import { ContactButtons } from 'app/components/google/contact-buttons'
 import { AboutHero } from 'app/components/about/about-hero'
 import { BioSection } from 'app/components/about/bio-section'
+import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
@@ -63,9 +65,18 @@ const faqs = [
 ]
 
 export default function AboutPage() {
+  // 2025: Breadcrumb items for schema
+  const breadcrumbItems = [
+    { name: 'Home', url: '/' },
+    { name: 'About', url: '/about' },
+  ]
+
   return (
     <>
+      {/* 2025: Enhanced Schema Markup */}
       <LocalBusinessSchema />
+      <PersonSchema />
+      <BreadcrumbSchema items={breadcrumbItems} />
       <FAQSchema faqs={faqs} />
       
       {/* Breadcrumb - outside prose container */}
@@ -83,6 +94,45 @@ export default function AboutPage() {
 
         {/* Improved Bio Section */}
         <BioSection />
+
+        {/* Our Office Section */}
+        <section className="mb-12 py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl border-2 border-blue-100 shadow-lg">
+          <div className="max-w-6xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Our Professional Office</h2>
+              <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+                Located in the heart of Las Vegas, our office provides a welcoming and professional environment 
+                for consultations with financial planners and their clients.
+              </p>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6 mb-6">
+              <div className="relative rounded-xl overflow-hidden shadow-lg h-64 md:h-80">
+                <Image
+                  src="/images/office-hallway.jpg"
+                  alt="Professional office hallway and waiting area at Wealth Transition Planning"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="lazy"
+                />
+              </div>
+              <div className="relative rounded-xl overflow-hidden shadow-lg h-64 md:h-80">
+                <Image
+                  src="/images/office-space.jpg"
+                  alt="Modern office workspace at Wealth Transition Planning"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+            <p className="text-center text-gray-700">
+              Our office is designed to provide a comfortable, professional atmosphere where financial planners 
+              and their clients can discuss real estate needs in a relaxed yet focused environment.
+            </p>
+          </div>
+        </section>
 
         {/* Additional Bio Content */}
         <section className="mb-12">
@@ -122,29 +172,43 @@ export default function AboutPage() {
           </p>
         </section>
 
-        {/* Credentials Section - Link to dedicated page */}
-        <section className="mb-12 p-12 bg-blue-50 rounded-xl border border-blue-200">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-semibold mb-6 text-gray-900">Credentials & Certifications</h2>
-            <p className="mb-6 text-lg text-gray-900 max-w-3xl mx-auto leading-relaxed">
+        {/* Credentials Section - Enhanced */}
+        <section className="mb-12 py-12 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-blue-50 to-white rounded-2xl border-2 border-blue-100 shadow-lg">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Credentials & Certifications</h2>
+            </div>
+            <p className="mb-8 text-lg md:text-xl text-gray-900 max-w-3xl mx-auto leading-relaxed font-medium">
               Dr. Janet Duffy maintains the highest professional standards and holds multiple 
               certifications and credentials that demonstrate her expertise in real estate 
               services, financial planning, and wealth transition strategies.
             </p>
             <Link
               href="/about/credentials"
-              className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg"
+              className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:shadow-xl transition-all font-semibold text-lg transform hover:-translate-y-0.5"
             >
               View All Credentials & Certifications →
             </Link>
           </div>
         </section>
 
-        {/* Philosophy Section - Link to dedicated page */}
-        <section className="mb-12 p-12 bg-neutral-50 rounded-xl border border-gray-200">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-semibold mb-6 text-gray-900">Professional Philosophy and Approach</h2>
-            <p className="mb-6 text-lg text-gray-900 max-w-3xl mx-auto leading-relaxed">
+        {/* Philosophy Section - Enhanced */}
+        <section className="mb-12 py-12 px-4 sm:px-6 lg:px-8 bg-white rounded-2xl border-2 border-gray-200 shadow-lg">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-6">
+              <div className="w-16 h-16 bg-gray-900 rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Professional Philosophy and Approach</h2>
+            </div>
+            <p className="mb-8 text-lg md:text-xl text-gray-900 max-w-3xl mx-auto leading-relaxed font-medium">
               Dr. Duffy believes that successful real estate services for financial planners 
               require more than just property expertise—they demand a deep understanding of 
               financial planning principles, tax strategies, and wealth transition objectives. 
@@ -153,7 +217,7 @@ export default function AboutPage() {
             </p>
             <Link
               href="/about/philosophy"
-              className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-semibold text-lg"
+              className="inline-block px-8 py-4 bg-blue-600 text-white rounded-lg hover:bg-blue-700 hover:shadow-xl transition-all font-semibold text-lg transform hover:-translate-y-0.5"
             >
               Learn More About Our Philosophy →
             </Link>
@@ -317,23 +381,29 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="mb-12 p-8 bg-neutral-50 rounded-lg">
-          <h2 className="text-3xl font-semibold mb-4 text-gray-900">Ready to Partner with Dr. Janet Duffy?</h2>
-          <p className="mb-6 text-lg text-gray-900">
-            If you're a CERTIFIED Financial Planner looking to enhance your practice with 
-            expert real estate services, or if you're a client seeking real estate guidance 
-            that supports your financial planning goals, schedule a free consultation with Dr. 
-            Janet Duffy, one of the best financial advisors in Las Vegas for real estate planning.
-          </p>
-          <ContactButtons className="mb-4" />
-          <div className="mt-6">
-            <Link
-              href="/contact"
-              className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              Free Consultation with Las Vegas Real Estate Expert
-            </Link>
+        {/* CTA Section - Enhanced */}
+        <section className="mb-12 py-12 px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto bg-gradient-to-br from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center shadow-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white leading-tight">
+              Ready to Partner with Dr. Janet Duffy?
+            </h2>
+            <p className="mb-8 text-lg md:text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed font-medium">
+              If you're a CERTIFIED Financial Planner looking to enhance your practice with 
+              expert real estate services, or if you're a client seeking real estate guidance 
+              that supports your financial planning goals, schedule a free consultation with Dr. 
+              Janet Duffy, one of the best financial advisors in Las Vegas for real estate planning.
+            </p>
+            <div className="mb-6">
+              <ContactButtons className="mb-4" />
+            </div>
+            <div className="mt-6">
+              <Link
+                href="/contact"
+                className="inline-block px-8 py-4 bg-white text-blue-600 rounded-lg hover:bg-blue-50 shadow-lg hover:shadow-xl transition-all font-semibold text-lg transform hover:-translate-y-0.5"
+              >
+                Free Consultation with Las Vegas Real Estate Expert
+              </Link>
+            </div>
           </div>
         </section>
 

@@ -8,8 +8,15 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import Footer from './components/footer'
 import { baseUrl } from './sitemap'
 import { businessConfig } from './config/business'
-import { LocalBusinessSchema } from './components/google/local-business-schema'
-import { GoogleAnalytics } from './components/google/google-analytics'
+import {
+  LocalBusinessSchema,
+  OrganizationSchema,
+  WebSiteSchema,
+  PersonSchema,
+  GoogleAnalytics,
+} from './components/google'
+import { CoreWebVitalsOptimizer } from './components/core-web-vitals'
+import { SkipToContent } from './components/accessibility/skip-to-content'
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
@@ -20,6 +27,23 @@ export const metadata: Metadata = {
   description: businessConfig.description,
   keywords: businessConfig.keywords,
   authors: [{ name: businessConfig.owner }],
+  // 2025: Enhanced metadata for AI/semantic search
+  creator: businessConfig.owner,
+  publisher: businessConfig.name,
+  // Geo-location for local SEO
+  other: {
+    'geo.region': 'US-NV',
+    'geo.placename': businessConfig.serviceArea.city,
+    'geo.position': '36.1699;-115.1398', // Las Vegas coordinates (UPDATE with actual)
+    'ICBM': '36.1699, -115.1398',
+  },
+  // Language and locale
+  alternates: {
+    canonical: baseUrl,
+    languages: {
+      'en-US': baseUrl,
+    },
+  },
   openGraph: {
     title: businessConfig.name,
     description: businessConfig.description,
@@ -79,8 +103,13 @@ export default function RootLayout({
       )}
     >
       <head>
+        {/* 2025 Enhanced Schema Markup for Google Search */}
         <LocalBusinessSchema />
-        {/* Preconnect to external domains for faster loading */}
+        <OrganizationSchema />
+        <WebSiteSchema />
+        <PersonSchema />
+
+        {/* Preconnect to external domains for faster loading (Core Web Vitals) */}
         <link rel="preconnect" href="https://www.googletagmanager.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="preconnect" href="https://www.google-analytics.com" crossOrigin="anonymous" />
@@ -88,16 +117,22 @@ export default function RootLayout({
         {/* Preconnect to Google Maps */}
         <link rel="preconnect" href="https://maps.googleapis.com" crossOrigin="anonymous" />
         <link rel="dns-prefetch" href="https://maps.googleapis.com" />
+        
+        {/* 2025: Theme color for mobile browsers */}
+        <meta name="theme-color" content="#2563eb" />
+        <meta name="mobile-web-app-capable" content="yes" />
       </head>
       <body className="antialiased bg-white text-gray-900" style={{ color: '#111827', fontSize: '16px', lineHeight: '1.7' }}>
+        <SkipToContent />
         <Navbar />
-        <main className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <main id="main-content" className="min-h-screen max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" tabIndex={-1}>
           {children}
         </main>
         <Footer />
         <Analytics />
         <SpeedInsights />
         <GoogleAnalytics />
+        <CoreWebVitalsOptimizer />
       </body>
     </html>
   )

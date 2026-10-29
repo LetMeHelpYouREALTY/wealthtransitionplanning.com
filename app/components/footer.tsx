@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { businessConfig, getPhoneLink } from 'app/config/business'
+import { SecurityBadges } from './security/security-badges'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -217,6 +218,8 @@ export default function Footer() {
           </div>
         </div>
       </div>
+      {/* Security Badges */}
+      <SecurityBadges />
     </footer>
   )
 }
