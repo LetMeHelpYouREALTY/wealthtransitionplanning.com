@@ -19,6 +19,10 @@ export const metadata: Metadata = {
     template: `%s | ${businessConfig.name}`,
   },
   description: businessConfig.description,
+  // Self-referencing canonical: './' resolves against metadataBase to each page's own URL
+  alternates: {
+    canonical: './',
+  },
   keywords: businessConfig.keywords,
   authors: [{ name: businessConfig.owner }],
   openGraph: {
